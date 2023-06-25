@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Data</title>
+</head>
+<body>
+  <h1>User Data</h1>
+  <div id="userContainer"></div>
+
+  <script>
+    // Retrieve the user data from localStorage
+    var customers = JSON.parse(localStorage.getItem('customers'));
+
+    // Check if any user data exists
+    if (customers && customers.length > 0) {
+      // Get the container element
+      var userContainer = document.getElementById('userContainer');
+
+      // Loop through the customers and create HTML elements to display the data
+      customers.forEach(function(user) {
+        var userDiv = document.createElement('div');
+        userDiv.innerHTML = '<p>Name: ' + user.name + '</p>' +
+                            '<p>Email: ' + user.email + '</p>' +
+                            '<p>Password: ' + user.password + '</p>' +
+                            '<img src="' + user.photo + '" alt="User Photo">';
+
+        userContainer.appendChild(userDiv);
+      });
+    } else {
+      // Display a message if no user data found
+      document.getElementById('userContainer').innerHTML = '<p>No user data available</p>';
+    }
+  </script>
+</body>
+</html>

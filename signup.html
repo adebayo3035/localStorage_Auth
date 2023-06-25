@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS-AUTH SIGN UP PAGE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-image">
+                <img src="resources/header_image.png" alt="Header Image">
+            </div>
+        </div>
+        <div class="main-section">
+            <h1> CREATE ACCOUNT</h1>
+            <form action="" id="regForm">
+                <div class="input-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first-name" id="firstname" placeholder="John" required="">
+                </div>
+                <div class="input-group">
+                    <label for="lasst-name">Last Name</label>
+                    <input type="text" name="last-name" id="lastname" placeholder="Doe" required="">
+                </div>
+                <div class="input-group">
+                    <label for="email">E-mail Address</label>
+                    <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" required="">
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password"id="password" required="">
+                </div>
+                <div class="input-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" name="confirm-password" id="confirm-password" required="">
+                </div>
+                <div class="input-group">
+                    <label for="photo">Select Photo</label>
+                    <input type="file" id="photo" accept="image/*" name="photo" onchange="previewImage(event)" required="">
+                    <img id="preview" src="#" alt="Preview">
+                </div>
+                <button type="submit" id="btnRegister"> CREATE ACCOUNT</button>
+                <p> Already Have An Account? <a href="login.html">Login Here</a></p>
+                
+            </form>
+
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+    <script src="scripts/signup.js">
+            
+          </script>
+</body>
+
+</html>

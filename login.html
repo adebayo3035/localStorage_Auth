@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS-AUTH LOGIN PAGE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-image">
+                <img src="resources/login.png" alt="Header Image">
+            </div>
+        </div>
+        <div class="main-section">
+            <h1> LOGIN</h1>
+            <div id="loader">
+    
+            </div>
+            <form action="" id="loginForm">
+                <div class="input-group">
+                    <label for="username">E-mail Address</label>
+                    <input type="text" name="username" id="username" placeholder="johndoe@gmail.com" required="">
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password"required="">
+                </div>
+                <button type="submit" id = "btnLogin">LOGIN</button>
+                <p> Don't Have An Account? <a href="signup.html">Sign Up Here</a></p>
+            </form>
+
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+    <script src="scripts/login.js" defer></script>
+</body>
+
+</html>
